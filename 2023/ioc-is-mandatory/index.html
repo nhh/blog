@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Niklas's Blog - Inversion of Control and why you should care</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="/pico.min.css">
 </head>
 <body>
-
-
-
 <main class="container">
     <nav aria-label="breadcrumb">
         <ul>
@@ -25,11 +22,17 @@
         <h3>A mandatory software enginerring skill.</h3>
     </hgroup>
 
-    <p>Dependency injection has become a crucial aspect of modern software development. It offers numerous benefits, including increased flexibility, easier testing, and improved maintainability. In this article, we will explore the concept of dependency injection and discuss why it should be a mandatory practice in software development.</p>
+    <p>Dependency injection has become a crucial aspect of modern software development. It offers numerous benefits,
+        including increased flexibility, easier testing, and improved maintainability. In this article, we will explore
+        the concept of dependency injection and discuss why it should be a mandatory practice in software
+        development.</p>
 
     <p>
         What is Dependency Injection?
-        Dependency injection (DI) is a design pattern that allows the separation of concerns by decoupling classes or components. It is a way of providing the required dependencies to a class from external sources, rather than having the class create or manage them itself. This inversion of control provides more flexibility and allows for better modularization and extensibility.
+        Dependency injection (DI) is a design pattern that allows the separation of concerns by decoupling classes or
+        components. It is a way of providing the required dependencies to a class from external sources, rather than
+        having the class create or manage them itself. This inversion of control provides more flexibility and allows
+        for better modularization and extensibility.
     </p>
 
     <p>
@@ -37,19 +40,28 @@
     </p>
 
     <ul>
-        <li>Separation of Concerns: By using dependency injection, the responsibilities of creating and managing dependencies are delegated to a dedicated component, often called a dependency injector or container. This separation of concerns promotes cleaner, more maintainable code.
+        <li>Separation of Concerns: By using dependency injection, the responsibilities of creating and managing
+            dependencies are delegated to a dedicated component, often called a dependency injector or container. This
+            separation of concerns promotes cleaner, more maintainable code.
         </li>
         <li>
-            Increased Testability: When dependencies are injected, it becomes easier to mock or substitute them during unit testing. This enables developers to write effective tests and identify issues more efficiently.
+            Increased Testability: When dependencies are injected, it becomes easier to mock or substitute them during
+            unit testing. This enables developers to write effective tests and identify issues more efficiently.
         </li>
         <li>
-            Flexibility and Extensibility: DI helps in creating loosely coupled components that can be easily swapped or extended without impacting other parts of the system. This allows for seamless integration with new functionalities or third-party libraries.
+            Flexibility and Extensibility: DI helps in creating loosely coupled components that can be easily swapped or
+            extended without impacting other parts of the system. This allows for seamless integration with new
+            functionalities or third-party libraries.
         </li>
         <li>
-            Modularization and Reusability: Components with clearly defined dependencies can be modularized and reused across different parts of an application or even in entirely different projects. This promotes code reuse and eliminates duplication.
+            Modularization and Reusability: Components with clearly defined dependencies can be modularized and reused
+            across different parts of an application or even in entirely different projects. This promotes code reuse
+            and eliminates duplication.
         </li>
         <li>
-            Scalability and Maintainability: With DI, managing dependencies becomes more manageable, reducing the risk of tightly coupled code and increasing maintainability. It also simplifies the addition or removal of dependencies, making the application more scalable.
+            Scalability and Maintainability: With DI, managing dependencies becomes more manageable, reducing the risk
+            of tightly coupled code and increasing maintainability. It also simplifies the addition or removal of
+            dependencies, making the application more scalable.
         </li>
     </ul>
 
@@ -59,21 +71,32 @@
 
     <ul>
         <li>
-            Use a Dependency Injection Container: Utilize a dependency injection container or framework to handle the injection of dependencies automatically. Popular options include Angular's Dependency Injection, Spring Framework, and .NET Core's built-in DI container.
+            Use a Dependency Injection Container: Utilize a dependency injection container or framework to handle the
+            injection of dependencies automatically. Popular options include Angular's Dependency Injection, Spring
+            Framework, and .NET Core's built-in DI container.
         </li>
         <li>
-            Apply the Single Responsibility Principle: Make sure each class or component has a clear and focused responsibility, making it easier to manage and inject dependencies.
+            Apply the Single Responsibility Principle: Make sure each class or component has a clear and focused
+            responsibility, making it easier to manage and inject dependencies.
         </li>
         <li>
-            Prefer Constructor Injection: Use constructor injection as the primary method for injecting dependencies, as it ensures that all required dependencies are available when an object is instantiated.
+            Prefer Constructor Injection: Use constructor injection as the primary method for injecting dependencies, as
+            it ensures that all required dependencies are available when an object is instantiated.
         </li>
         <li>
-            Utilize Interface-based Programming: Depend on abstractions (interfaces) rather than concrete implementations, as this promotes loose coupling and allows for easier substitution of dependencies when needed.
+            Utilize Interface-based Programming: Depend on abstractions (interfaces) rather than concrete
+            implementations, as this promotes loose coupling and allows for easier substitution of dependencies when
+            needed.
         </li>
     </ul>
 
     <p>
-        Dependency injection is a vital practice in modern software development, offering significant benefits such as improved flexibility, easier testing, and increased maintainability. By separating concerns and delegating the responsibility of managing dependencies to a dedicated component, developers can create more modular, scalable, and reusable code. With the availability of various dependency injection frameworks and best practices, it is recommended that organizations make dependency injection a mandatory practice to enhance the quality and maintainability of their software projects.
+        Dependency injection is a vital practice in modern software development, offering significant benefits such as
+        improved flexibility, easier testing, and increased maintainability. By separating concerns and delegating the
+        responsibility of managing dependencies to a dedicated component, developers can create more modular, scalable,
+        and reusable code. With the availability of various dependency injection frameworks and best practices, it is
+        recommended that organizations make dependency injection a mandatory practice to enhance the quality and
+        maintainability of their software projects.
     </p>
 </main>
 </body>
