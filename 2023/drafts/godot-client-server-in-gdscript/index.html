@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Niklas's Blog - Client/Server implementation for binary data transfer in godot</title>
+    <link rel="stylesheet" href="/blog/assets/pico.min.css">
+</head>
+<body>
+<main class="container">
+
+    <nav aria-label="breadcrumb">
+        <ul>
+            <li><a href="/blog">Home</a></li>
+            <li><a href="/blog/2023">2023</a></li>
+            <li>Page</li>
+        </ul>
+    </nav>
+
+    <img alt="the godot engine logo" src="logo_large_color_dark.png" style="max-height: 250px">
+
+    <hgroup>
+        <h2>Beyond the MultiplayerAPI</h2>
+        <h3>Implementing a client/server architecture in gdscript and godot.</h3>
+    </hgroup>
+
+    <p> I've starting playing around with Godot last month. It's been a really fun experience so far.
+        The engine is really approachable and enables me to "get up and running" fast, as a newbie game dev.
+
+        I am playing video games since I can remember and once thing I was always curious about, was how
+        game-servers works behind the curtain and manage and persists game state as well as bidirectional communication between clients.
+    </p>
+
+    <p>
+        I followed <a href="https://www.youtube.com/watch?v=n8D3vEx7NAE">a tutorial</a> on godot networking and got
+        a scene synchronized over the network in ~60 minutes. Awesome! The following days I tried to mix and match the code
+        to add new features to my game. But the <code>rpc</code> methods and the relay-peer architecture of
+        the default <code>MultiplayerAPI</code> is giving me hard times. My mind is so tightly coupled to client/server
+        architecture, because I worked in `HTTP` land the majority of my professional life.
+    </p>
+
+    <p>
+        Cross-Calling <code>rpc</code> methods and constantly checking who's the <code>Authority</code> wasn't what I expected.
+        It got messy really fast. So I gave up and did some research on how to implement simple message passing with the base
+        building blocks <code>ENet</code> provide by the engine.
+    </p>
+
+    <p>
+        Before I ditched the <code>MultiplayerAPI</code> completely, I managed a way to send binary data to the host via
+    </p>
+
+    <script src="https://gist.github.com/sundbry/5e0507d93d4c89023b2ba5f39f27f722.js"></script>
+
+</main>
+
+<script src="https://utteranc.es/client.js"
+        repo="nhh/blog"
+        issue-term="pathname"
+        theme="github-light"
+        label="comment"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</body>
+</html>
